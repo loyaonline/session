@@ -1,9 +1,9 @@
-module github.com/go-session/session/v3
+module github.com/loyaonline/session
 
 go 1.17
 
 require (
-	github.com/bytedance/gopkg v0.0.0-20221122125632-68358b8ecec6
+	github.com/bytedance/gopkg v0.0.0-20230224073017-0b6876860a2f
 	github.com/smartystreets/goconvey v1.6.4
 )
 

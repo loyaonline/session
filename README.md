@@ -1,15 +1,12 @@
 # session
-
-> A efficient, safely and easy-to-use session library for Go.
-
-[![Build][build-status-image]][build-status-url] [![Codecov][codecov-image]][codecov-url] [![ReportCard][reportcard-image]][reportcard-url] [![GoDoc][godoc-image]][godoc-url] [![License][license-image]][license-url]
+A efficient, safely and easy-to-use session library for Go.
 
 ## Quick Start
 
 ### Download and install
 
 ```bash
-go get -v github.com/go-session/session/v3
+go get -v github.com/loyaonline/session
 ```
 
 ### Create file `server.go`
@@ -22,7 +19,7 @@ import (
 	"fmt"
 	"net/http"
 
-	session "github.com/go-session/session/v3"
+	session "github.com/loyaonline/session"
 )
 
 func main() {
@@ -88,31 +85,5 @@ go build server.go
 
 ## Store Implementations
 
-- [https://github.com/go-session/redis](https://github.com/go-session/redis) - Redis
-- [https://github.com/go-session/mongo](https://github.com/go-session/mongo) - MongoDB
-- [https://github.com/go-session/gorm](https://github.com/go-session/gorm) - [GORM](https://github.com/jinzhu/gorm)
-- [https://github.com/go-session/mysql](https://github.com/go-session/mysql) - MySQL
-- [https://github.com/go-session/buntdb](https://github.com/go-session/buntdb) - [BuntDB](https://github.com/tidwall/buntdb)
-- [https://github.com/go-session/cookie](https://github.com/go-session/cookie) - Cookie
+- [https://github.com/loyaonline/redis-session-store](https://github.com/loyaonline/redis-session-store) - Redis
 
-## Middlewares
-
-- [https://github.com/go-session/gin-session](https://github.com/go-session/gin-session) - [Gin](https://github.com/gin-gonic/gin)
-- [https://github.com/go-session/beego-session](https://github.com/go-session/beego-session) - [Beego](https://github.com/astaxie/beego)
-- [https://github.com/go-session/gear-session](https://github.com/go-session/gear-session) - [Gear](https://github.com/teambition/gear)
-- [https://github.com/go-session/echo-session](https://github.com/go-session/echo-session) - [Echo](https://github.com/labstack/echo)
-
-## MIT License
-
-    Copyright (c) 2021 Lyric
-
-[build-status-url]: https://travis-ci.org/go-session/session
-[build-status-image]: https://travis-ci.org/go-session/session.svg?branch=master
-[codecov-url]: https://codecov.io/gh/go-session/session
-[codecov-image]: https://codecov.io/gh/go-session/session/branch/master/graph/badge.svg
-[reportcard-url]: https://goreportcard.com/report/github.com/go-session/session
-[reportcard-image]: https://goreportcard.com/badge/github.com/go-session/session
-[godoc-url]: https://godoc.org/github.com/go-session/session
-[godoc-image]: https://godoc.org/github.com/go-session/session?status.svg
-[license-url]: http://opensource.org/licenses/MIT
-[license-image]: https://img.shields.io/npm/l/express.svg
